@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "polysemy-mark:lib"
+
+    - path: "./app/Main.hs"
+      component: "polysemy-mark:exe:polysemy-mark"
+
+    - path: "./app/Paths_hledupt.hs"
+      component: "polysemy-mark:exe:polysemy-mark"
+
+    - path: "./test"
+      component: "polysemy-mark:test:polysemy-mark-test"
