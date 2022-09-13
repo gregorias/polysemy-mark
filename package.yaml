@@ -39,6 +39,7 @@ default-extensions:
   LambdaCase
   MultiParamTypeClasses
   MultiWayIf
+  NoImplicitPrelude
   NumericUnderscores
   OverloadedLabels
   OverloadedLists
@@ -57,6 +58,7 @@ default-extensions:
 
 dependencies:
 - base >= 4.13 && < 5
+- protolude
 
 # no-type-defaults, this is dangerous, but in terms of convenience it's so
 # useful to use ExtendedDefaultRules that I keep it.
@@ -77,6 +79,8 @@ library:
   source-dirs: src
   ghc-options:
   - -Wunused-packages
+  dependencies:
+  - polysemy
 
 executables:
   polysemy-mark:

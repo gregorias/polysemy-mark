@@ -1,6 +1,9 @@
 module Main (main) where
 
-import Lib
+import Lib (markFileExperiment0, markFileExperiment1)
+import Protolude
 
 main :: IO ()
-main = someFunc
+main = do
+  markFileExperiment0
+  markFileExperiment1
